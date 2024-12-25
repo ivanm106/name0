@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>mysite</title>
+</head>
+<body>
+    <h2>Список гиперссылок</h2>
+    <ul style="line-height: 30px;">
+        <li><a href="http://kubsu.ru">http ссылка на кубгу</a></li>
+        <li><a href="https://kubsu.ru">https ссылка на кубгу</a></li>
+        <a href="http://kubsu.ru"><img src="images/image.jpg"width="300" alt="Цветочек"></a>
+
+        <li><a href="index.html">cокращенная ссылкa на главную страницу</a></li>
+        <li><a href="#a1">Ссылка на фрагмент</a></li>
+        <li><a href="https://www.mvideo.ru/products/holodilnik-hi-hfdd019560sw-belyi-20087896">Ссылка с 3 параметрами</a></li>
+        <li><a href="http://site.com/page?id=2">ссылка с параметром id в URL</a></li>
+        <li><a href="page.html">относительная на страницу в текущем каталоге</a></li>
+        <li><a href="/about/page.html">относительная на страницу в каталоге about</a></li>
+        <li><a href="../page.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="/../../page.html">относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+        <li>контекстная в <a href="#">тексте</a>абзаца</li>
+        <li><a href="https://www.kubsu.ru/ru/abiturient/news">ссылкa на фрагмент страницы стороннего сайта</a></li>
+
+        <a href="https://ua.puma.com/ru/"><img src="images/puma.jpg"width="100"></a>
+        <a href="https://www.adidas.com/us"><img src="images/adidas_logo.png"width="100"></a>
+        <a href="https://www.nike.com/ru/"><img src="images/nike.jpg"width="100"></a>
+
+
+        <li><a href="">ссылкa с пустым href</a></li>
+        <li><a>ссылкa без href</a></li>
+        <li><a href="http://" rel="nofollow"> по которой запрещен переход поисковикам</a></li>
+        <li><a href="http://" rel="noindex"> запрещающая для индексации поисковикм</a></li>
+
+        <ol>
+            <li><a href="#">title</a></li>
+            <li><a href="#">title</a></li>
+            <li><a href="#">title</a></li>
+        </ol>
+        <li><a href="ftp://user:pass123@123.ru/Temp/file.txt">?</a></li>
+    </ul>
+    <form action="" method="get" id="a1">
+        <p>
+          <label for="name">ФИО:</label>
+          <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+            <label for="tel">Телефон:</label>
+            <input type="tel" name="tel" id="tel" required>
+          </p>
+        <p>
+          <label for="email">e-mail:</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="date">Дата рождения:</label>
+            <input type="date" name="date" id="date" required>
+          </p>
+          <legend>Пол</legend>
+          <br>
+            <label>
+            <input type="radio" name="level"checked>
+            мужской
+            </label>
+            <label>
+            <input type="radio" name="level">
+            женский
+            </label>
+            <br>
+      </form>  
+      <p> Любимый язык програмирования:</p>
+      <select name="field-name-3">
+        <option value="1." selected="selected">С++</option>
+        <option value="2.">Java</option>
+        <option value="3.">Prolog</option>
+        <option value="4.">JS</option>
+        <option value="5.">Python</option>
+        <option value="6.">Pascal</option>
+      </select> 
+      <p> Текстовое поле:</p>
+    <textarea name="field-name-2"></textarea>
+    <br>
+    С контрактом ознакомлен<input type="checkbox">
+    <br>
+    <input type="submit" value="Сохранить" />
+</body>
+</html>
